@@ -11,6 +11,26 @@
 	    font-style: normal;
 	}
 @media all and (min-width:767px) and (max-width:1025px) {  
+    @keyframes fill {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      @keyframes fadein {
+              from {
+                  opacity:0;
+                  }
+                  to {
+                  opacity:1;
+                  }
+          }
     body{
         margin: 0px;
     }
@@ -73,6 +93,16 @@
 				border: none;
 				background-color:#f7f7f7;
                 margin-left: 180px;
+                .fa-heart:hover {
+                    animation: fill 1100ms ease-in-out;
+                    display: inline-block;
+                    opacity: 1;
+                    background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                    background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    font-weight: bold;
+                }
             }
         }
         .conteneur_block{

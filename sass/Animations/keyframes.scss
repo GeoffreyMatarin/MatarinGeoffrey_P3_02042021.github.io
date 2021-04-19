@@ -1,0 +1,36 @@
+@keyframes loader {
+    0% {
+      opacity: 1;
+      display: block;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      display: block;
+      transform: scale(1);
+    }
+     99% {
+      opacity: 0;
+      display: block;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      display: none;
+      transform: scale(0);
+    }
+  }
+  @keyframes rotate {
+    0% {
+        transform: rotate(1turn);
+        transition: transform 500ms ease-in-out;
+    }
+    70% {
+        transform: rotate(2turn);
+        transition: transform 500ms ease-in-out;
+    }
+    100%{
+        transform: rotate(-1turn);
+        transition: transform 500ms ease-in-out;
+    }
+  }
