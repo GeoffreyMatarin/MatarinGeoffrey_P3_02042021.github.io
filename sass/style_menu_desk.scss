@@ -10,7 +10,7 @@
 	    font-weight: normal;
 	    font-style: normal;
 	}
-@media screen and (min-width:1025px) {  
+@media screen and (min-width:1200px) {  
     @keyframes fill {
         0% {
           opacity: 0;
@@ -136,7 +136,7 @@
                         margin-left: 15px;
                         padding-bottom: 15px;
                         width: 85%;
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         white-space: nowrap;
                         h4{
                             margin: 15px 0px 10px 0px;
@@ -144,7 +144,23 @@
                     }
                     .prix{
                         margin-top: 35px;
-                        font-size: 1.2rem;
+                        font-size: 1rem;
+                    }
+                    .check{
+                        display: none;
+                        justify-content:center;
+                        align-items:center;
+                        width:20vw;
+				        height: 100%;
+                        border-radius: 0px 20px 20px 0px;
+                        font-size: 1.5rem;
+                        background-color:#99E2D0 ;
+                        text-overflow: ellipsis;
+                        
+                        .fa-check-circle{
+                            color: #fff;
+
+                        }
                     }
                     
                 }
