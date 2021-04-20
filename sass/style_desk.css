@@ -31,6 +31,7 @@ body {
   position: fixed;
   animation: loader 2s ease-in;
   transform: scale(0);
+  z-index: 4;
 }
 
 .lettre {
