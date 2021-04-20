@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: "shrikhand";
-  src: url("fonts/shrikhand/Shrikhand-Regular.ttf") format("woff2");
+  src: url("fonts/Shrikhand/Shrikhand-Regular.ttf") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -128,13 +128,14 @@
     margin-bottom: 15px;
     margin-top: 10px;
     box-shadow: 2px 2px 10px #EAEAEA;
-    white-space: normal;
   }
   .Menu .conteneur_block .conteneur_menu .block_menu .texte_menu {
     margin-left: 15px;
     padding-bottom: 15px;
     width: 85%;
     font-size: 1.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .Menu .conteneur_block .conteneur_menu .block_menu .texte_menu h4 {
     margin: 15px 0px 10px 0px;

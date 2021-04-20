@@ -6,31 +6,12 @@
 }
 @font-face {
 	font-family: 'shrikhand';
-	src:url('fonts/shrikhand/Shrikhand-Regular.ttf') format('woff2');
+	src:url('fonts/Shrikhand/Shrikhand-Regular.ttf') format('woff2');
 	    font-weight: normal;
 	    font-style: normal;
 	}
 @media screen and (min-width:1200px) {  
-    @keyframes fill {
-        0% {
-          opacity: 0;
-        }
-        50% {
-          opacity: 0.5;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-      
-      @keyframes fadein {
-              from {
-                  opacity:0;
-                  }
-                  to {
-                  opacity:1;
-                  }
-          }
+  
     body{
         margin: 0px;
     }
@@ -138,6 +119,8 @@
                         width: 85%;
                         font-size: 1rem;
                         white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                         h4{
                             margin: 15px 0px 10px 0px;
                         }
