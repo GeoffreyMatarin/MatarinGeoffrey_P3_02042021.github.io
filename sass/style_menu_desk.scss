@@ -112,42 +112,74 @@
                 margin-top: 10px;
                 box-shadow: 2px 2px 10px #EAEAEA;
                 white-space: normal;
-                
-                    .texte_menu{
-                        margin-left: 15px;
-                        padding-bottom: 15px;
-                        width: 85%;
-                        font-size: 1rem;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        h4{
-                            margin: 15px 0px 10px 0px;
-                        }
-                    }
-                    .prix{
-                        margin-top: 35px;
-                        font-size: 1rem;
-                    }
-                    .check{
-                        display: none;
-                        justify-content:center;
-                        align-items:center;
-                        width:20vw;
-				        height: 100%;
-                        border-radius: 0px 20px 20px 0px;
-                        font-size: 1.5rem;
-                        background-color:#99E2D0 ;
-                        text-overflow: ellipsis;
-                        
-                        .fa-check-circle{
-                            color: #fff;
+                position: relative;
+                    .block_ar{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 20px;
+                        background-color: #99E2D0 ;
+                        z-index: 1;
+                        .texte_menu{
+                            padding-bottom: 20px;
+                            padding-top: 15px;
+                            width: 100%;
+                            font-size: 1rem;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            display: flex;
+                            background-color: white;
+                            border-radius: 20px;
+                            z-index: 3;
+                            transition: width 500ms ease-in-out;
+                            &:hover{
+                                width: 80%;
+                                border-radius: 20px 0px 0px 20px;
+                            }
+                            .texte{
+                                width: 80%;
+                                margin-left: 15px;
+                                
+                            }
+                            .prix{
+                                margin-top: 35px;
+                                font-size: 1.4rem;
+                            }
+                            .check{
+                                position: absolute;
+                                right: 0px; 
+                                top: 32px;
+                                transform: translate(0px), rotate(-360deg);
+                                transition: transform 500ms ease-in-out; 
+                                .fa-check-circle{
+                                    margin-top: 8px;
+                                    font-size: 1.8rem;
+                                    color: white;
+                                    z-index: 2;
 
-                        }
+                                }
+                            }
+                        }    
                     }
-                    
                 }
             }
+        }
+        .texte_menu:hover .check {
+            transform: translate(-1.6vw);
+            transform: opacity(1);
+        }
+  
+        .check .fa-check-circle {
+            transition: transform 500ms ease-in-out;
+        }
+  
+        .texte_menu:hover .fa-check-circle {
+            transform: rotate(-360deg);
+          }
+      
+        .texte_menu:hover + .icon{
+          transition: transform 500ms;
+          transform: rotate(0deg);
         }
         .btn_com{
             display: flex;
@@ -160,6 +192,11 @@
             border: none;
             color: white;
             font-size: 1.4rem;
+            &:hover{
+                transform: scale(1.07);
+                filter: brightness(1.05);
+                box-shadow: 2px 2px 10px #313131;
+            }  
             }    
         }    
     }

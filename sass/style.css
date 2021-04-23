@@ -125,6 +125,7 @@ body {
   background-color: #F2F2F2;
   font-weight: bold;
   font-size: 1.2em;
+  width: 60%;
 }
 
 .present {
@@ -145,7 +146,7 @@ body {
   padding: 15px;
   margin-top: 30px;
   margin-bottom: 20px;
-  width: 17rem;
+  width: 14rem;
   border: none;
   border-radius: 80px;
   background: linear-gradient(#FF79DA, #9356DC);
