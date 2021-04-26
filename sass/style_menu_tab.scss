@@ -1,3 +1,4 @@
+@import "Animations/keyframes.css";
 @font-face {
     font-family: 'roboto';
     src: url("fonts/Roboto/Roboto-Regular.ttf") format('ttf');
@@ -11,26 +12,34 @@
 	    font-style: normal;
 	}
 @media all and (min-width:767px) and (max-width:1200px) {  
-    @keyframes fill {
-        0% {
-          opacity: 0;
+    .block_menu:nth-child(1){
+        animation: appblock 1s;
         }
-        50% {
-          opacity: 0.5;
+        .block_menu:nth-child(2){
+        animation: appblock 2s;
         }
-        100% {
-          opacity: 1;
+        .block_menu:nth-child(3){
+        animation: appblock 3s;
         }
-      }
-      
-      @keyframes fadein {
-              from {
-                  opacity:0;
-                  }
-                  to {
-                  opacity:1;
-                  }
-          }
+        .block_menu:nth-child(4){
+        animation: appblock 4s;
+        }
+        .block_menu:nth-child(5){
+        animation: appblock 5s;
+        }
+        .block_menu:nth-child(6){
+        animation: appblock 6s;
+        }
+        .block_menu:nth-child(7){
+        animation: appblock 7s;
+        }
+        .block_menu:nth-child(8){
+        animation: appblock 8s;
+        }
+        .block_menu:nth-child(9){
+        animation: appblock 9s;
+        }
+
     body{
         margin: 0px;
     }

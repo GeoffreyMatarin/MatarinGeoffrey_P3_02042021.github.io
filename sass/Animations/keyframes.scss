@@ -34,4 +34,17 @@
         transition: transform 500ms ease-in-out;
     }
   }
- 
+  @keyframes appblock {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.5;
+    }
+    55% {
+      opacity: 1;
+    }
+  }

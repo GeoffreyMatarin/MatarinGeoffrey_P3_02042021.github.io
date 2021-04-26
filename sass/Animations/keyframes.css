@@ -34,22 +34,17 @@
     transition: transform 500ms ease-in-out;
   }
 }
-@keyframes apparition {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fill {
+@keyframes appblock {
   0% {
     opacity: 0;
   }
-  50% {
+  25% {
+    opacity: 0;
+  }
+  40% {
     opacity: 0.5;
   }
-  100% {
+  55% {
     opacity: 1;
   }
 }
