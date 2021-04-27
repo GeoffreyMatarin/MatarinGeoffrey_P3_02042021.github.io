@@ -132,16 +132,21 @@ body {
 
 .present {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: white;
   padding-bottom: 40px;
 }
 .present h1 {
   font-size: 2.3rem;
+  width: 30%;
+  text-align: center;
 }
 .present p {
   font-size: 1.7rem;
+  width: 32.5%;
+  text-align: center;
 }
 .present .bout_expl {
   padding: 25px;
@@ -199,6 +204,13 @@ section .fonc .conteneur .block_fonc {
   margin-bottom: 120px;
   width: 100%;
   box-shadow: 2px 2px 10px #b8b6b6;
+}
+section .fonc .conteneur .block_fonc:hover {
+  background-color: #9356dc26;
+  color: #9356DC;
+}
+section .fonc .conteneur .ico_fonc {
+  margin-top: 5px;
 }
 section .fonc .conteneur .ordre_fonc {
   background-color: #9356DC;
@@ -271,9 +283,15 @@ section .rest .block_des .titre_des {
   margin-left: 15px;
   margin-top: 5px;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 section .rest .block_des .text_des {
   width: 85%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 section .rest .block_des .loc_desc {
   font-size: 1.4rem;
@@ -288,13 +306,14 @@ section .rest .block_des .coeur_des {
   background-color: white;
   margin-left: 10px;
 }
-section .rest .block_des .coeur_des .hearti:hover {
-  animation: fill 900ms ease-in;
+section .rest .block_des .coeur_des .fa-heart:hover {
+  animation: rampcoeur 1100ms ease-in-out;
   display: inline-block;
+  opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   font-weight: bold;
 }
 

@@ -135,15 +135,18 @@ padding: 0;
         display: flex;
 		flex-flow: column wrap;
 		align-items: center;
+        justify-content: space-around;
 		background-color: #f7f7f7;
 		padding-bottom: 40px;
         padding-top: 40px;
         h1{
             font-size: 1.3rem;
+            text-align: center;
             
         }
         p {
             font-size: 1.1rem;
+            text-align: center;
         }
         .bout_expl{
             padding: 15px;
@@ -192,6 +195,10 @@ padding: 0;
             width: 90%;
 			box-shadow: 5px 5px 10px #bbb8b8;
             position: relative;
+            &:hover{
+                background-color:  #9356dc26;
+                color: #9356DC;
+            }
 
             
         }
@@ -276,17 +283,26 @@ padding: 0;
             margin-left: 15px;
         }
         .coeur_des{
-            	font-size: 1.8em;
-				margin-left: 2vw;
-				color: black;
-  				cursor: pointer;
-				border: none;
-				background-color: white;
-               margin-left: 10px;
-               .hearti:hover {
-                @include heart;
-                }
+            font-size: 1.8em;
+			margin-left: 2vw;
+			color: black;
+  			cursor: pointer;
+			border: none;
+			background-color: white;
+            margin-left: 10px;
+                .fa-heart:hover {
+                    animation: rampcoeur 1100ms ease-in-out;
+                    display: inline-block;
+                    opacity: 1;
+                    background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                    background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    font-weight: bold;
+                }        
+        
         }
+
     }
 }
 .foot{

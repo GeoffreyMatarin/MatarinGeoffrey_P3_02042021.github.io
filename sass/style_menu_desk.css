@@ -104,7 +104,7 @@
   }
   .Menu .ttr_coeur_menu .titre_menu {
     font-family: "shrikhand", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     width: 60%;
     white-space: nowrap;
   }
@@ -118,7 +118,7 @@
     margin-left: 180px;
   }
   .Menu .ttr_coeur_menu .ico_titre_menu .fa-heart:hover {
-    animation: fill 1100ms ease-in-out;
+    animation: rampcoeur 1100ms ease-in-out;
     display: inline-block;
     opacity: 1;
     background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
@@ -166,8 +166,6 @@
     padding-top: 15px;
     width: 100%;
     font-size: 1rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
     display: flex;
     background-color: white;
@@ -182,10 +180,13 @@
   .Menu .conteneur_block .conteneur_menu .block_menu .block_ar .texte_menu .texte {
     width: 80%;
     margin-left: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .Menu .conteneur_block .conteneur_menu .block_menu .block_ar .texte_menu .prix {
     margin-top: 35px;
     font-size: 1.4rem;
+    font-weight: bold;
   }
   .Menu .conteneur_block .conteneur_menu .block_menu .block_ar .texte_menu .check {
     position: absolute;
@@ -220,7 +221,7 @@
     margin-top: 40px;
   }
   .Menu .btn_com .btn_comm {
-    background-color: #FF79DA;
+    background: linear-gradient(#FF79DA, #9356DC);
     padding: 20px 75px 20px 75px;
     border-radius: 50px;
     border: none;
@@ -229,7 +230,7 @@
   }
   .Menu .btn_com .btn_comm:hover {
     transform: scale(1.07);
-    filter: brightness(1.05);
+    filter: brightness(1.15);
     box-shadow: 2px 2px 10px #313131;
   }
 

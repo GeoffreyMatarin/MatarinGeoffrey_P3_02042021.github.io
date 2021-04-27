@@ -138,9 +138,11 @@ body {
 }
 .present h1 {
   font-size: 2.3rem;
+  text-align: center;
 }
 .present p {
   font-size: 1.7rem;
+  text-align: center;
 }
 .present .bout_expl {
   padding: 15px;
@@ -191,6 +193,13 @@ body {
   width: 95%;
   box-shadow: 2px 2px 10px #b8b6b6;
   position: relative;
+}
+.fonc .conteneur .block_fonc:hover {
+  background-color: #9356dc26;
+  color: #9356DC;
+}
+.fonc .conteneur .ico_fonc {
+  margin-top: 5px;
 }
 .fonc .conteneur .ordre_fonc {
   background-color: #9356DC;
@@ -279,13 +288,14 @@ body {
   background-color: white;
   margin-left: 10px;
 }
-.rest .block_des .coeur_des .hearti:hover {
-  animation: fill 900ms ease-in;
+.rest .block_des .coeur_des .fa-heart:hover {
+  animation: rampcoeur 1100ms ease-in-out;
   display: inline-block;
+  opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   font-weight: bold;
 }
 
