@@ -182,6 +182,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  .Menu .conteneur_block .conteneur_menu .block_menu .block_ar .texte_menu .texte h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .Menu .conteneur_block .conteneur_menu .block_menu .block_ar .texte_menu .prix {
     margin-top: 35px;
     font-size: 1.2rem;
