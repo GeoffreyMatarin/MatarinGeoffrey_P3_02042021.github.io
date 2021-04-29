@@ -191,6 +191,7 @@
     margin-top: 40px;
     font-size: 1.1rem;
     font-weight: bold;
+    z-index: 4;
   }
   .Menu .conteneur_block .conteneur_menu .block_menu .block_ar .texte_menu .check {
     position: absolute;
