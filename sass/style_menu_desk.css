@@ -138,18 +138,18 @@
     display: flex;
     flex-direction: column;
     margin-left: 30px;
-    width: 25%;
+    width: 23.5%;
   }
   .Menu .conteneur_block .conteneur_menu .block_menu {
     background-color: white;
     width: 95%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     border-radius: 20px;
     margin-bottom: 15px;
-    margin-top: 10px;
+    margin-top: 20px;
     box-shadow: 2px 2px 10px #EAEAEA;
     white-space: normal;
     position: relative;
@@ -185,8 +185,9 @@
   }
   .Menu .conteneur_block .conteneur_menu .block_menu .block_ar .texte_menu .prix {
     margin-top: 35px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
+    z-index: 4;
   }
   .Menu .conteneur_block .conteneur_menu .block_menu .block_ar .texte_menu .check {
     position: absolute;

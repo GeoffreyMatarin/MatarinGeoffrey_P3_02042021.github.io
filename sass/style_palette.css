@@ -60,7 +60,7 @@
   .head {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
     width: 90%;
     margin-left: 25px;
   }
@@ -70,14 +70,15 @@
   }
   .head .logo_head {
     background-color: white;
-    width: 30%;
+    width: 70%;
     border-bottom: 0px solid black;
     padding-top: 15px;
     padding-bottom: 15px;
     margin-left: 40px;
   }
   .head .logo_head img {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
   }
 
   .block_img {
@@ -101,13 +102,12 @@
   .Menu .ttr_coeur_menu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-left: 15px;
   }
   .Menu .ttr_coeur_menu .titre_menu {
     font-family: "shrikhand", sans-serif;
     font-size: 1.1rem;
-    width: 60%;
-    white-space: nowrap;
   }
   .Menu .ttr_coeur_menu .ico_titre_menu {
     font-size: 1.8em;
@@ -116,7 +116,8 @@
     cursor: pointer;
     border: none;
     background-color: #f7f7f7;
-    margin-left: 120px;
+    margin-left: 10px;
+    margin-right: 20px;
   }
   .Menu .ttr_coeur_menu .ico_titre_menu .fa-heart:hover {
     animation: rampcoeur 1100ms ease-in-out;
@@ -196,7 +197,7 @@
     position: absolute;
     right: 0px;
     top: 27px;
-    transform: translate(0px), rotate(-360deg);
+    transform: translate(0px), rotate(-360deg), opacity(0);
     transition: transform 500ms ease-in-out;
   }
   .Menu .conteneur_block .conteneur_menu .block_menu .block_ar .texte_menu .check .fa-check-circle {
