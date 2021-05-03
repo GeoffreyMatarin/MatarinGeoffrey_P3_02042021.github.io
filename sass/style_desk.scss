@@ -1,14 +1,6 @@
 @import "Animations/keyframes.css";
 
-@mixin heart{
-	animation: fill 900ms ease-in;
-	display: inline-block;
-    background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-    font-weight: bold;
-}
+
 @font-face {
     font-family: 'roboto';
     src: url("fonts/Roboto/Roboto-Regular.ttf") format('ttf');
@@ -79,15 +71,6 @@ body{
 }
 .lettre:nth-child(8){
     animation-delay: 0.8s;
-}
-.page{
-    z-index: 1;
-}
-
-*, ::before, ::after {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
 }
 .block_page{
     font-family: "roboto", sans-serif;

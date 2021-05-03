@@ -74,16 +74,6 @@ body {
   animation-delay: 0.8s;
 }
 
-.page {
-  z-index: 1;
-}
-
-*, ::before, ::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .block_page {
   font-family: "roboto", sans-serif;
 }
