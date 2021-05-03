@@ -165,7 +165,8 @@
     position: absolute;
     right: 0px;
     top: 32px;
-    transform: translate(0px), rotate(-360deg);
+    transform: translate(0px);
+    transform: rotate(-360deg);
     transition: transform 500ms ease-in-out;
   }
   .Menu .conteneur_block .conteneur_menu .block_menu .block_ar .texte_menu .check .fa-check-circle {

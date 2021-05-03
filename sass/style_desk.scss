@@ -234,6 +234,12 @@ section{
             width: 90%;
             font-weight: bold;
         }
+        .conteneur_rest{
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
         .block_rest{
                 width: 45%;
                 background-color: white;

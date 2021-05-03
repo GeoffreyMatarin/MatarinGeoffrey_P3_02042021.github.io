@@ -24,7 +24,6 @@
         to bottom, #fff, #b4b1b1, #fff,#b4b1b1,);	
         background-size: 200%;	
         background-repeat: no-repeat;
-        background-position: cover;
         z-index: 1;
         position: fixed;
         animation: loader 2s ease-in;
@@ -215,6 +214,12 @@ body{
 		padding-left: 10px;
 		width: 90%;
         font-weight: bold;
+    }
+    .conteneur_rest{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
     }
     .block_rest{
             width: 45%;
